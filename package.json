@@ -1,9 +1,14 @@
 {
+  "compilerOptions": {
+    "rootDir": "./",
+    "outDir": "dist"
+  },
   "name": "writeflow",
   "version": "1.0.0",
-  "description": "Blogging platform",
+  "description": "Blogging platform written in typescript",
   "main": "index.ts",
   "scripts": {
+    "dev": "npx ts-node src/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,5 +16,18 @@
     "url": "writeflow"
   },
   "author": "schmeekygeek",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.6.2",
+    "mongoose": "^8.4.0"
+  }
 }
